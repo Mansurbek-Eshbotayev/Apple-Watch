@@ -1,0 +1,345 @@
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+  url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+  url('../fonts/roboto-v30-latin-700.woff') format('woff'); 
+}
+
+
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  
+}
+
+main{
+  flex-grow: 1;
+}
+
+.container{
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img{
+  display: block;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* header */
+
+.header{
+  padding: 35px 0;
+}
+
+.header__inner{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__link{
+  display: block;
+  margin-right: auto;
+}
+
+.nav__list{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+
+.nav__item{
+  margin-right: 30px;
+}
+
+.nav__link{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover{
+  border-bottom: 1px solid #333333;
+  opacity: 0.8;
+}
+
+.form__input{
+  border: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #666666;
+}
+
+.form__input::placeholder{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: #666666;
+}
+
+.form__input:focus{
+outline: none;
+}
+
+
+
+/* hero */
+
+.hero{
+  padding: 145px 0 185px 0;
+  background-image: url(../images/watches.png);
+  background-repeat:no-repeat;
+  background-size: 587px 565px;
+  background-position: calc(50% + 522px) calc(50% + 29px);
+  border-bottom: 2px solid #DDDDDD;
+}
+
+.hero__title{
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.hero__wrap{
+  width: 100%;
+  max-width: 450px;
+  border-left: 2px solid 
+  #888888;
+}
+
+.hero__text{
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+}
+
+.hero__link{
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 38px;
+  background-color: #EA625C;
+  transition: all 0.3s ease;
+}
+
+.hero__link:hover{
+  background-color: #ca4a44;
+}
+
+/* Info */
+
+.info{
+  padding: 68px 0 80px 0;
+}
+
+.info__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info__item{
+  width: 280px;
+}
+
+.info__item:nth-child(1){
+  position: relative;
+}
+
+.info__item:nth-child(2){
+  position: relative;
+}
+
+.info__item:nth-child(1)::after{
+  content: "";
+  width: 44px;
+  height: 8px;
+  position: absolute;
+  bottom: -10px;
+  background-image: url(../images/dod.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__item:nth-child(2)::after{
+  content: "";
+  width: 44px;
+  height: 8px;
+  position: absolute;
+  bottom: -10px;
+  background-image: url(../images/dod.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__title{
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.text{
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #333333;
+}
+
+.info__link{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  color: #EA625C;
+}
+
+.info__link::before{
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #EA625C;
+  display:inline-block;
+  margin-bottom: 4px;
+  margin-right: 5px;
+  transition: all 0.5s ease;
+}
+
+.info__link:hover::before{
+  width: 60px;
+}
+
+/* Sport */
+
+.sport{
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.sport__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sport__info{
+  width: 100%;
+  max-width: 382px;
+}
+
+/* Control */
+
+.control{
+  background-image: url(../images/runners.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  padding: 240px 0;
+}
+
+.control__wrap{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contol__title{
+  color: #FFFFFF;
+}
+
+.contol__text{
+  color: #FFFFFF;
+}
+
+.contol__wrap{
+  border-left: 2px solid #FFFFFF;
+}
+
+.control__inner{
+  width: 100%;
+  max-width: 490px;
+}
